@@ -1,0 +1,13 @@
+CREATE TABLE `settings` (
+  `bg_code` varchar(10) NOT NULL,
+  `key` varchar(100) DEFAULT NULL,
+  `values` text NOT NULL,
+  `json` tinyint(1) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `settings`
+--
+
+INSERT INTO `settings` (`key`, `values`, `json`) VALUES
+('migrations', '0', 0);
